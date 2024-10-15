@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const mediaMatriz = (m) => {
+            let soma = 0;
+            
+            m.forEach(linha => {
+                linha.forEach(v => soma += parseFloat(v));
+            });
+
+            return soma / (m.length * m[0].length);
+        }
+
+        const matriz = [[3, 5, 1],
+                        [2, 1, 1],
+                        [3, 1, 1]];
+
+        window.alert(mediaMatriz(matriz));
+    </script>
+</body>
+</html>

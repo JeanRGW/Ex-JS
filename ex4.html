@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <label for="letra">Letra    :</label>
+        <input type="text" id="letra" name="letra">
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        const formulario = document.getElementById('form');
+
+        formulario.addEventListener('submit', event => {
+            event.preventDefault();
+
+            const letra = document.getElementById('letra').value
+            if(letra === 'a' || letra === 'A')
+                window.alert("A")
+            else if (letra === 'b' || letra === 'B')
+                window.alert("B")
+            else
+                window.alert("Outra letra");
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const maiorVal = (vet) => {
+            let maior = vet[0];
+
+            for(el of vet){
+                if(el > maior)
+                    maior = el;
+            }
+
+            return maior;
+        }
+
+        window.alert(maiorVal([4, 3, 2, 9, 2]));
+    </script>
+</body>
+</html>

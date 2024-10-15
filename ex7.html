@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="op1">Opção 1</button>
+    <button id="op2">Opção 2</button>
+    <button id="op3">Opção 3</button>
+    <button id="op4">Opção 4</button>
+
+    <script>
+        window.alert("Escolha uma opção de 1 a 3.")
+
+        const btn1 = document.getElementById("op1")
+        btn1.addEventListener('click', (event) => {
+            window.alert("Opção 1 escolhida")
+        })
+
+        const btn2 = document.getElementById("op2")
+        btn2.addEventListener('click', (event) => {
+            window.alert("Opção 2 escolhida")
+        })
+
+        const btn3 = document.getElementById("op3")
+        btn3.addEventListener('click', (event) => {
+            window.alert("Opção 3 escolhida")
+        })
+
+        const btn4 = document.getElementById("op4")
+        btn4.addEventListener('click', (event) => {
+            window.alert("Opção inválida escolhida")
+        })
+    </script>
+</body>
+</html>
